@@ -1709,5 +1709,96 @@ button.icon-unsorted {
     width: 190px;
   }
 }
+//start settings
+.settings {
+  background-color: #f1f4f5;
+  padding-bottom: 100px;
+}
+.tab {
+  border-bottom: #dedede;
+}
+.product__one-tabs.settings-tabs {
+  display: flex;
+  .tabs {
+    max-width: 270px;
+    height: 100%;
+    width: 100%;
+    margin-right: 30px;
+    border: 1px solid #dedede;
+    border-bottom: none;
+    text-align: left;
+    display: block;
+    span {
+      display: block;
+      background-color: #fff;
+      border-bottom: 1px solid #dedede;
+      padding: 17px 17px 17px 50px;
+      color: #707070;
+      font-size: 14px;
+      @include f500;
+      &.active {
+        border-bottom: 1px solid $colorGreen;
+        color: #37474f;
+        &::before {
+          color: $colorGreen;
+        }
+      }
+      &::before {
+        left: 24px;
+        color: $bg;
+      }
+    }
+  }
+  .tabs .tab + .tab {
+    border-left: 0px;
+  }
+  .tab__content {
+    background-color: #fff;
+    color: $bg;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+.page-box {
+  background-color: #fff;
+  border: 1px solid #dedede;
 
+  &-title {
+    border-bottom: 1px solid #dedede;
+    padding: 18px 34px;
+    color: $bg;
+    font-size: 24px;
+    @include f500;
+  }
+}
+.page-box__content {
+  padding: 30px 35px 80px;
+}
+.settings__line {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  label {
+    color: #444;
+    width: 260px;
+  }
+  input {
+    background-color: #f9f9f9;
+    max-width: 540px;
+    width: 100%;
+    border: 1px solid #dedede;
+    height: 40px;
+    color: #000;
+    padding: 0 10px;
+  }
+  select {
+    border: 1px solid #dedede;
+    height: 40px;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+    max-width: 540px;
+    width: 100%;
+    color: #707070;
+  }
+}
 @import "media.scss";
