@@ -1801,4 +1801,203 @@ button.icon-unsorted {
     color: #707070;
   }
 }
+
+// start profile
+.profile {
+  background-color: #f4f6f5;
+  &__inner {
+    display: flex;
+  }
+  &__aside {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    .aside__item {
+      margin-bottom: 27px;
+    }
+  }
+  .footer__social-link {
+    margin-bottom: 30px;
+  }
+}
+
+.profile__content {
+  width: 100%;
+}
+.profile-status {
+  border: 1px solid #dedede;
+  color: #707070;
+  font-size: 13px;
+  padding: 6px 9px 5px 30px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 11px;
+    top: 13px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+  }
+}
+.profile-on {
+  &::before {
+    background-color: $colorGreen;
+  }
+}
+.profile-of {
+  &::before {
+    background-color: $colorRed;
+  }
+}
+.profile__aside-btn {
+  margin-bottom: 13px;
+}
+.profile__aside-msg {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  @include f700;
+  background-color: #546e7a;
+  padding: 18px 10px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+  color: #fff;
+  position: relative;
+  &::before {
+    content: "\e902";
+    position: absolute;
+    left: 48px;
+    font-size: 20px;
+    font-family: "icomoon";
+  }
+}
+.profile__aside-follow {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  @include f500;
+  box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+  background-color: $colorGreen;
+
+  padding: 18px 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.profile__banner {
+  padding: 20px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  margin-bottom: 35px;
+  &-img {
+    background-position: center;
+    min-height: 332px;
+    width: 828px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.profile-settings {
+  .product__one-tabs.settings-tabs {
+    .tabs span {
+      font-family: "Roboto", sans-serif !important;
+      color: #707070;
+      position: relative;
+      &::before {
+        position: absolute;
+        font-size: 18px;
+        left: 15px;
+        top: 13px;
+        font-family: "icomoon";
+      }
+    }
+  }
+}
+.profile__items {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #dedede;
+}
+.profile__item {
+  width: 25%;
+  background-color: #fff;
+  text-align: center;
+  height: 80px;
+  padding: 20px 5px 17px;
+  & + .profile__item {
+    border-left: 1px solid #dedede;
+  }
+
+  &-title {
+    font-size: 14px;
+    color: $bg;
+    @include f500;
+  }
+  &-content {
+    font-size: 14px;
+    color: #707070;
+    @include f500;
+    &.profile__item-sales {
+      color: $bg;
+    }
+  }
+}
+.personal__box {
+  background-color: #fff;
+  padding: 35px 40px 25px;
+  border: 1px solid #dedede;
+}
+.personal__box-title {
+  @include f700;
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: $bg;
+}
+.personal__box-text {
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 20px;
+    color: #707070;
+  }
+}
+.personal__box-item-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.personal__box-item-name {
+  font-size: 16px;
+  font-style: italic;
+  @include f500;
+  color: $bg;
+}
+.personal__box-item-number {
+  font-size: 16px;
+  @include f700;
+  color: $bg;
+}
+.personal__box-item-line {
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  height: 15px;
+  margin-bottom: 23px;
+  span {
+    display: block;
+    border-radius: 3px;
+    background-image: url(../images/content/skill-progresss.jpg);
+    background-position-x: 16px;
+    height: 15px;
+    &::before {
+      content: "\f105";
+      font-family: "icomoon";
+      position: absolute;
+      left: 0px;
+      color: #d0d0d0;
+      font-size: 14px;
+    }
+  }
+}
+
 @import "media.scss";
